@@ -33,7 +33,8 @@ bool is_divisible(const vector<int> subset) {
     return true;
 }
 
-//recursion to finding best_vec by Pass by reference
+//recursion to finding best_vec by Pass by reference. Some ideas from https://stackoverflow.com/questions/42424291/reference-parameters-and-recursion
+//and https://stackoverflow.com/questions/40102450/passing-a-vector-as-a-reference-to-a-recursive-function
 void finding_recursion(const vector<int>& input, vector<int> current_vec, vector<int>& best_vec, long long unsigned int index) {
     //base case
     if (index == input.size()) {
